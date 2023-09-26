@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Présentation de l'objet");
             Lot objet = allLot[count];
             System.out.println("Lot n°" + count+1 + ": " + objet.getName() + " avec un prix minimum de " + objet.getMinimumPrice() + "€");
-            Thread.sleep(5000);
+            Thread.sleep(1000);
             System.out.println("L'enchères commence!");
             String prompt = "";
             while(!prompt.equals("stop")) {
@@ -36,6 +36,7 @@ public class Main {
             }
 
             System.out.println("Fin de l'enchère, vendu à " + objet.getCurrentPrice() + "€ !");
+            Thread.sleep(2000);
 
             count++;
         }
